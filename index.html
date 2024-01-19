@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Camilo Arrieta</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/" href="/public/assets/avatar.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header">
+    <img src="/public/assets/logo.png" alt="logo" class="logo">
+  </header>
+  <main id="app">
+    <section class="profile">
+      <article class="info">
+        <div class="box-image">
+          <img src="./public/assets/avatar.png" alt="">
+        </div>
+        <div class="box-name">
+          <h1>Juan C. Arrieta</h1>
+          <p>Hola &#128075;, soy estudiante de Inegeniería de Sistemas enfocado en el desarrollo de aplicaciones web
+            FullStack!</p>
+          <a href="/public/curriculum/Juan-Camilo-Arrieta-Bernal - CV.pdf" target="_blank" class="cv"><i class="fa-solid fa-file"></i> CV</a>
+        </div>
+      </article>
+    </section>
+    <hr>
+    <section class="projects">
+      <h2>Proyectos <i class="fa-solid fa-star"></i></h2>
+      <div class="container">
+        <article class="card">
+          <div class="box-image-project">
+            <img src="/public/assets/img-salon.png" alt="" class="img-card">
+          </div>
+          <div class="description">
+            <h3>Glamour Styles</h3>
+            <p>Aplicación web para el agendamiento de citas en linea en un salón de belleza, la web cuenta con login, manejo de roles y control de cruce de horarios.</p>
+            <div class="card-icons">
+              <img src="/public/assets/php.svg" alt="php">
+              <img src="/public/assets/javascript.svg" alt="js">
+              <img src="/public/assets/mysql.svg" alt="mysql">
+              <img src="/public/assets/html.svg" alt="html">
+              <img src="/public/assets/css.svg" alt="css">
+            </div>
+            <div class="box-link">
+              <a href="https://glamourstylessalon.kesug.com" target="_blank">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="skills">
+      <h2>Habilidades <i class="fa-solid fa-code"></i></i></h2>
+      <div class="tools">
+        <div>
+          <img src="/public/assets/angular.svg" alt="angular">
+          <p>Angular</p>
+        </div>
+        <div>
+          <img src="/public/assets/nodejs.svg" alt="nodejs">
+          <p>Node.js</p>
+        </div>
+        <div>
+          <img src="/public/assets/expressjs.svg" alt="expressjs">
+          <p>Express.js</p>
+        </div>
+        <div>
+          <img src="/public/assets/nestjs.svg" alt="nestjs">
+          <p>NestJs</p>
+        </div>
+        <div>
+          <img src="/public/assets/javascript.svg" alt="js">
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <img src="/public/assets/typescript.svg" alt="ts">
+          <p>TypeScript</p>
+        </div>
+        <div>
+          <img src="/public/assets/php.svg" alt="php">
+          <p>PHP</p>
+        </div>
+        <div>
+          <img src="/public/assets/mysql.svg" alt="mysql">
+          <p>MySQL</p>
+        </div>
+        <div>
+          <img src="/public/assets/postgresql.svg" alt="postgresql">
+          <p>PostgreSQL</p>
+        </div>
+        <div>
+          <img src="/public/assets/mongodb.svg" alt="mongodb">
+          <p>MongoDB</p>
+        </div>
+        <div>
+          <img src="/public/assets/sequelize.svg" alt="sequelize">
+          <p>Sequelize</p>
+        </div>
+        <div>
+          <img src="/public/assets/typeorm.svg" alt="typeorm">
+          <p>TypeORM</p>
+        </div>
+        <div>
+          <img src="/public/assets/linux.svg" alt="linux">
+          <p>Linux</p>
+        </div>
+        <div>
+          <img src="/public/assets/terminal.svg" alt="terminal">
+          <p>Terminal</p>
+        </div>
+        <div>
+          <img src="/public/assets/git.svg" alt="git">
+          <p>Git</p>
+        </div>
+      </div>
+    </section>
+    <section class="social">
+      <h2>Redes <i class="fa-solid fa-at"></i></h2>
+      <div class="media">
+        <a href="https://www.linkedin.com/in/juan-camilo-arrieta-bernal-b05766165/?originalSubdomain=co" class="social" target="_blank">
+          <img src="/public/assets/linkedin.svg" alt="linkedin">
+          <p>LinkedIn</p>
+        </a>
+        <a href="https://github.com/Juancamilo21" class="social" target="_blank">
+          <img src="/public/assets/github.svg" alt="github">
+          <p>GitHub</p>
+        </a>
+      </div>
+    </section>
+    <section class="contact">
+      <h2>Contacto <i class="fa-solid fa-envelope"></i></h2>
+      <div class="box-email">
+        <div class="email">
+          <p id="text-email">arrietacamilo530@gmail.com</p>
+        </div>
+        <div class="box-button-contact">
+          <a href="mailto: arrietacamilo530@gmail.com" data-tooltip="Envíar email"><i class="fa-solid fa-paper-plane"></i></a>
+          <button type="button" id="btn-copy" data-tooltip="Copiar email"><i class="fa-solid fa-copy"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+:root {
+  --bg-color: #020617;
+  --second-bg-body-color: #252B34;
+  --white: #fff;
+  --white-text-color: rgba(255, 255, 255, .92);
+  --black-text-color: rgba(0, 0, 0, 0.85);
+  --primary-color: #2FD6CC;
+  --black: #000;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+input,
+button {
+  font-size: 10px;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  max-width: 80rem;
+  width: 100%;
+  min-width: 30rem;
+  height: 7rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  z-index: 1111;
+  background-color: var(--bg-color);
+  opacity: .97;
+}
+
+.header .logo {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+#app {
+  padding: 9rem 1.5rem 0 1.5rem;
+  max-width: 80rem;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-size: 4.2rem;
+  color: var(--white-text-color);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--white-text-color);
+  margin-bottom: 2.5rem;
+}
+
+.profile .info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile .info .box-image img {
+  max-width: 16rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile .info .box-image {
+  border-radius: 50%;
+  border: 0.5rem solid #6b727a;
+  filter: drop-shadow(1px 1px 6px var(--primary-color));
+}
+
+.profile .info .box-name p {
+  display: block;
+  color: var(--white);
+  font-size: 1.6rem;
+  opacity: .85;
+  max-width: 48rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+.profile .info .box-name div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile .info .box-name .cv {
+  color: var(--black-text-color);
+  font-size: 1.4rem;
+  background-color: var(--primary-color);
+  opacity: .85;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.profile .info .box-name .social {
+  color: var(--white-text-color);
+  font-size: 2.2rem;
+
+}
+
+hr {
+  border-color: #6b727a;
+  margin: 3rem 0 3rem 0;
+}
+
+.skills .tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skills .tools div {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1.2rem;
+  gap: 1rem;
+  border: 0.2rem solid rgba(255, 255, 255, .7);
+  border-radius: 1rem;
+}
+
+.skills .tools div p {
+  font-size: 1.6rem;
+  color: var(--white-text-color);
+  font-weight: 500;
+}
+
+.skills .tools div img,
+.social .media a img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.social .media {
+  display: flex;
+  gap: 2rem;
+}
+
+.social .media a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  color: var(--white-text-color);
+  font-weight: 500;
+  padding: 0.7rem 1.2rem;
+  border: 0.2rem solid rgba(255, 255, 255, .7);
+  border-radius: 1rem;
+  transition: all .5s ease;
+}
+
+.social .media a:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.contact .box-email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact .box-email .email {
+  background-color: rgba(35, 43, 70, .4);
+  padding: 1rem;
+  border: 0.2rem solid rgba(167, 167, 167, 0.4);
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.contact .box-email .email p {
+  font-size: 1.8rem;
+  color: var(--white-text-color);
+  font-weight: 300;
+}
+
+.contact .box-email .box-button-contact {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact .box-email .box-button-contact a,
+.contact .box-email .box-button-contact button {
+  background-color: var(--primary-color);
+  color: var(--black-text-color);
+  padding: 0.8rem 3.2rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  opacity: .85;
+  position: relative;
+}
+
+.contact .box-email .box-button-contact button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Agrega estilos según tus preferencias */
+[data-tooltip] {
+  position: relative;
+  display: inline-block;
+}
+
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  visibility: hidden;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  background-color: var(--white);
+  color: var(--black-text-color);
+  font-weight: 500;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -6rem;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s;
+}
+
+.projects .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects .container .card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(35.1rem, 100%), 1fr));
+  gap: 2rem;
+}
+
+.projects .container .card .box-image-project {
+  width: 100%;
+  height: auto;
+}
+
+.projects .container .card .img-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+
+.projects .container .card h3 {
+  font-size: 3.2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.projects .container .card p {
+  font-size: 1.6rem;
+  color: var(--white-text-color);
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.projects .container .card .card-icons {
+  margin-bottom: 2.5rem;
+}
+
+.projects .container .card .card-icons img {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.projects .container .card .box-link {
+  margin-bottom: 1.5rem;
+}
+
+.projects .container .card .box-link a {
+  background-color: var(--white);
+  opacity: .9;
+  color: var(--black-text-color);
+  padding: 1rem 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  transition: all .5s ease;
+}
+
+.projects .container .card .box-link a i {
+  transition: all .3s ease;
+}
+
+.projects .container .card .box-link a:hover i {
+  font-size: 2rem;
+}
+
+[data-tooltip]:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+}
+
+@media (width < 640px) {
+  .profile .info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .contact .box-email {
+    flex-direction: column;
+  }
+}
