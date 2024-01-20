@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "https://juancarrietabernal.tech/",
+  base: "https://juancarrietabernal.tech/"
 });
