@@ -21,7 +21,7 @@ html,
 input,
 button {
   font-size: 10px;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: 'JetBrains Mono', monospace;
   scroll-behavior: smooth;
 }
 
@@ -56,14 +56,14 @@ body {
 }
 
 #app {
-  padding: 9rem 1.5rem 0 1.5rem;
+  padding: 15rem 1.5rem 0 1.5rem;
   max-width: 80rem;
   width: 100%;
 }
 
 section {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 h1 {
@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.8rem;
   color: var(--white-text-color);
   margin-bottom: 2.5rem;
 }
@@ -102,7 +102,7 @@ h2 {
   color: var(--white);
   font-size: 1.6rem;
   opacity: .85;
-  max-width: 48rem;
+  max-width: 55rem;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 2.5rem;
@@ -358,6 +358,12 @@ hr {
 
   h1 {
     font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    color: var(--white-text-color);
+    margin-bottom: 2.5rem;
   }
 
   .contact .box-email {
