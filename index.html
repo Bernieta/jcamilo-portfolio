@@ -4,146 +4,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juan Camilo Arrieta</title>
+  <title>JC - Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/" href="/public/assets/avatar.png" />
+  <link rel="icon" href="/public/assets/avatar.png" type="image/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+
   <header class="header">
-    <a href="/">
-      <img src="/public/assets/logo.png" alt="logo" class="logo">
-    </a>
+    <figure class="logo"><img src="./public/assets/avatar.png" alt="logo"></figure>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="#projects" class="item-menu" data-id="projects">Proyectos</a></li>
+        <li><a href="#skills" class="item-menu" data-id="about">Habilidades</a></li>
+        <li><a href="#contact" class="item-menu">Contacto</a></li>
+        <li><a href="https://drive.google.com/file/d/1xEsrp1FermhupMgnmPFrRXbyeWL-dGec/view?usp=sharing"
+            class="item-menu" id="cv" target="_blank"><i class="fa-solid fa-file"></i> CV</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="button-menu"><i class="fa-solid fa-bars"></i></button>
   </header>
+
   <main id="app">
-    <section class="profile">
+    <section class="home" id="home">
       <article class="info">
-        <div class="box-image">
-          <img src="./public/assets/avatar.png" alt="">
-        </div>
+        <figure class="box-photo">
+          <img src="./public/assets/me.png" alt="">
+        </figure>
         <div class="box-name">
-          <h1>Juan C. Arrieta</h1>
-          <p>Hola &#128075;, soy <span>estudiante de Inegeniería de Sistemas</span> enfocado en el desarrollo de
-            aplicaciones web
-            FullStack!</p>
-          <a href="https://drive.google.com/file/d/1jFbG2A4-FpEDns_6ncHULlTmkMTvLMhV/view?usp=sharing" target="_blank" class="cv"><i
-              class="fa-solid fa-file"></i> CV</a>
+          <h1>Juan Camilo Arrieta</h1>
+        </div>
+        <div class="profession">
+          <h2>Desarrollador de Software</h2>
+        </div>
+        <p>Soy estudiante de Ingeniería de Sistemas enfocado en el desarrollo web Full Stack. Disfruto contruyendo
+          aplicaciones tanto del lado del servidor como del cliente.
+        </p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/juancarrietabernal21/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Juancamilo21" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
         </div>
       </article>
     </section>
-    <hr>
-    <section class="projects">
-      <h2>Proyectos <i class="fa-solid fa-star"></i></h2>
+
+    <section class="projects section" id="projects">
+      <div class="box-project">
+        <h3>PROYECTOS</h3>
+        <p>Mis proyectos más destacados</p>
+      </div>
       <div class="container">
         <article class="card">
-          <a href="https://glamourstylessalon.kesug.com" target="_blank">
-            <div class="box-image-project">
-              <img src="/public/assets/img-salon.png" alt="" class="img-card">
-            </div>
-          </a>
+          <figure class="box-image-project">
+            <img src="/public/assets/img-salon.png" alt="" class="img-card">
+          </figure>
           <div class="description">
-            <h3>Glamour Styles</h3>
+            <h4>Glamour Styles</h4>
             <p>Aplicación web para el agendamiento de citas en linea en un salón de belleza, la web cuenta con login,
               manejo de roles y control de cruce de horarios.</p>
-            <div class="card-icons">
-              <img src="/public/assets/php.svg" alt="php">
-              <img src="/public/assets/javascript.svg" alt="js">
-              <img src="/public/assets/mysql.svg" alt="mysql">
-              <img src="/public/assets/html.svg" alt="html">
-              <img src="/public/assets/css.svg" alt="css">
+            <div class="box-links">
+              <a href="#"><i class="fa-brands fa-github"></i> Código</a>
+              <a href="#">Live <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="box-link">
-              <a href="https://glamourstylessalon.kesug.com" target="_blank">Live <i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <div class="box-technologys">
+              <div>
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <figure class="box-image-project">
+            <img src="/public/assets/img-salon.png" alt="" class="img-card">
+          </figure>
+          <div class="description">
+            <h4>Glamour Styles</h4>
+            <p>Aplicación web para el agendamiento de citas en linea en un salón de belleza, la web cuenta con login,
+              manejo de roles y control de cruce de horarios.</p>
+            <div class="box-links">
+              <a href="#"><i class="fa-brands fa-github"></i> Código</a>
+              <a href="#">Live <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="box-technologys">
+              <div>
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
             </div>
           </div>
         </article>
       </div>
     </section>
-    <section class="skills">
-      <h2>Habilidades <i class="fa-solid fa-code"></i></i></h2>
-      <div class="tools">
-        <div>
-          <img src="/public/assets/angular.svg" alt="angular">
-          <p>Angular</p>
-        </div>
-        <div>
-          <img src="/public/assets/nodejs.svg" alt="nodejs">
-          <p>Node.js</p>
-        </div>
-        <div>
-          <img src="/public/assets/expressjs.svg" alt="expressjs">
-          <p>Express.js</p>
-        </div>
-        <div>
-          <img src="/public/assets/nestjs.svg" alt="nestjs">
-          <p>NestJs</p>
-        </div>
-        <div>
-          <img src="/public/assets/javascript.svg" alt="js">
-          <p>JavaScript</p>
-        </div>
-        <div>
-          <img src="/public/assets/typescript.svg" alt="ts">
-          <p>TypeScript</p>
-        </div>
-        <div>
-          <img src="/public/assets/php.svg" alt="php">
-          <p>PHP</p>
-        </div>
-        <div>
-          <img src="/public/assets/mysql.svg" alt="mysql">
-          <p>MySQL</p>
-        </div>
-        <div>
-          <img src="/public/assets/postgresql.svg" alt="postgresql">
-          <p>PostgreSQL</p>
-        </div>
-        <div>
-          <img src="/public/assets/mongodb.svg" alt="mongodb">
-          <p>MongoDB</p>
-        </div>
-        <div>
-          <img src="/public/assets/sequelize.svg" alt="sequelize">
-          <p>Sequelize</p>
-        </div>
-        <div>
-          <img src="/public/assets/typeorm.svg" alt="typeorm">
-          <p>TypeORM</p>
-        </div>
-        <div>
-          <img src="/public/assets/linux.svg" alt="linux">
-          <p>Linux</p>
-        </div>
-        <div>
-          <img src="/public/assets/terminal.svg" alt="terminal">
-          <p>Terminal</p>
-        </div>
-        <div>
-          <img src="/public/assets/git.svg" alt="git">
-          <p>Git</p>
-        </div>
-      </div>
+    <section class="skills section" id="skills">
+      <div class="box-skills">
+        <h3>HABILIDADES</h3>
+        <article class="skills-container">
+          <div class="tools">
+            <div class="tool">
+              <img src="./public/assets/nodejs.svg" alt="nodejs">
+              <span>Node.js</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/angular.svg" alt="angular">
+              <span>Angular</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/expressjs.svg" alt="expressjs">
+              <span>Express.js</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/nestjs.svg" alt="nestjs">
+              <span>Nest.js</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/javascript.svg" alt="js">
+              <span>JavaScript</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/typescript.svg" alt="ts">
+              <span>TypeScript</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/postgresql.svg" alt="postgres">
+              <span>PostgreSQL</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/mysql.svg" alt="mysql">
+              <span>MySQL</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/mongodb.svg" alt="mongo">
+              <span>MongoDB</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/sequelize.svg" alt="sequelize">
+              <span>Sequelize</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/typeorm.svg" alt="typeorm">
+              <span>TypeORM</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/linux.svg" alt="linux">
+              <span>Linux</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/terminal.svg" alt="terminal">
+              <span>Terminal</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/bash.svg" alt="bash">
+              <span>Bash</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/jwt.svg" alt="jwt">
+              <span>JWT</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/git.svg" alt="git">
+              <span>Git</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/html.svg" alt="html">
+              <span>HTML</span>
+            </div>
+            <div class="tool">
+              <img src="./public/assets/css.svg" alt="css">
+              <span>CSS</span>
+            </div>
+          </div>
+        </article>
     </section>
-    <section class="social">
-      <h2>Redes <i class="fa-solid fa-at"></i></h2>
-      <div class="media">
-        <a href="https://www.linkedin.com/in/juan-camilo-arrieta-bernal-b05766165/?originalSubdomain=co" class="social"
-          target="_blank">
-          <img src="/public/assets/linkedin.svg" alt="linkedin">
-          <p>LinkedIn</p>
-        </a>
-        <a href="https://github.com/Juancamilo21" class="social" target="_blank">
-          <img src="/public/assets/github.svg" alt="github">
-          <p>GitHub</p>
-        </a>
-      </div>
-    </section>
-    <section class="contact">
-      <h2>Contacto <i class="fa-solid fa-envelope"></i></h2>
+    <section class="contact section" id="contact">
+      <h3>CONTACTO</h3>
       <div class="box-email">
         <div class="email">
           <p id="text-email">arrietacamilo530@gmail.com</p>
@@ -156,6 +209,21 @@
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <p>Desarrollado por Juan Camilo Arrieta</p>
+    <div class="media">
+      <a href="https://www.linkedin.com/in/juancarrietabernal21/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/Juancamilo21" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+
+
   <script type="module" src="/main.js"></script>
 </body>
 

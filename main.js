@@ -1,4 +1,17 @@
+const buttonMenu = document.querySelector(".button-menu");
+const navbar = document.querySelector(".navbar");
+const itemsMenu = document.querySelectorAll(".item-menu");
 const btnCopy = document.getElementById("btn-copy");
+
+buttonMenu.addEventListener("click", () => {
+  navbar.classList.toggle("open-menu");
+});
+
+itemsMenu.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbar.classList.remove("open-menu");
+  });
+});
 
 btnCopy.addEventListener("click", copyText);
 btnCopy.addEventListener("mouseleave", () => {
