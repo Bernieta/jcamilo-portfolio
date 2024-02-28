@@ -203,6 +203,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(32rem, 100%), 1fr));
   gap: 1.5rem;
+  padding: 0 0 4rem 0;
   border-bottom: 0.1rem solid #25282b;
 }
 
@@ -240,7 +241,7 @@ h3 {
 
 .projects .container .card .box-image-project .img-card {
   width: 100%;
-  height: 90%;
+  height: 100%;
   object-fit: cover;
   border-radius: 1rem;
   transition: all .5s ease;
@@ -319,8 +320,6 @@ h3 {
 
 
 .skills-container .tools {
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
   gap: 1.5rem;
