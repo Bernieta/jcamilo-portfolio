@@ -256,7 +256,7 @@ h3 {
 }
 
 .projects .container .card .box-links a {
-  padding: 1rem 2rem;
+  padding: 1rem;
   border: 0.1rem solid #373839;
   border-radius: 1rem;
   background-color: #dbe0e409;
@@ -280,7 +280,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
   border: 0.1rem solid #373839;
   border-radius: 1rem;
   background-color: #dbe0e409;
