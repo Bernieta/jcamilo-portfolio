@@ -132,7 +132,7 @@ section {
   height: 18rem;
   object-fit: cover;
   border-radius: 50%;
-  filter: sepia(10%) drop-shadow(1px 1px 15px var(--primary-color));
+  filter: sepia(10%) drop-shadow(1px 1px 6px var(--primary-color));
 }
 
 h1 {
@@ -150,7 +150,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--primary-color);
   font-weight: 600;
   margin-bottom: 2rem;
@@ -297,6 +297,44 @@ h3 {
 .projects .container .card .box-icons img {
   width: 2.7rem;
   height: 2.7rem;
+}
+
+
+.education .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(40rem, 100%), 1fr));
+  gap: 1.5rem;
+}
+
+.education .container .degree {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 0.2rem solid #373839;
+  border-radius: 1rem;
+  background-color: #dbe0e409;
+}
+
+.education .container .degree span {
+  font-size: 2rem;
+  color: var(--white-text-color);
+  opacity: .75;
+}
+
+.education .container .degree div h6 {
+  font-size: 2rem;
+  color: var(--white-text-color);
+  font-weight: 500;
+}
+
+.education .container .degree div p {
+  font-size: 1.6rem;
+  color: var(--white-text-color);
+}
+
+.education .container .degree div span {
+  font-size: 1.4rem;
+  color: var(--white-text-color);
 }
 
 
