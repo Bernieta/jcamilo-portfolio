@@ -316,13 +316,13 @@ h3 {
 }
 
 .education .container .degree span {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--white-text-color);
   opacity: .75;
 }
 
 .education .container .degree div h6 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--white-text-color);
   font-weight: 500;
 }
@@ -330,11 +330,13 @@ h3 {
 .education .container .degree div p {
   font-size: 1.6rem;
   color: var(--white-text-color);
+  opacity: .85;
 }
 
 .education .container .degree div span {
   font-size: 1.4rem;
   color: var(--white-text-color);
+  opacity: .6;
 }
 
 
@@ -355,19 +357,19 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 2.5rem 1rem;
+  padding: 1.5rem 1rem;
   border: 0.2rem solid #373839;
   border-radius: 1rem;
   background-color: #dbe0e409;
   color: var(--white-text-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 300;
 
 }
 
 .skills-container .tools img {
-  width: 3rem;
-  height: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .contact .box-email {
